@@ -59,7 +59,7 @@
     ></script>
   </head>
   <body>
-    <h2>{{room}} - DjChat</h2>
+    <h2>{{room}} -<a href="/"> DjChat</a></h2>
 
     <div id="display">
       <!-- <div class="container darker">
@@ -166,7 +166,7 @@
           csrfmiddlewaretoken: $("input[name=csrfmiddlewaretoken]").val(),
         },
         success: function (data) {
-          alert(data);
+          //alert(data);
         },
       });
       document.getElementById("message").value = "";
